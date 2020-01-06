@@ -19,6 +19,7 @@ Maneuver to local version of /product-details-react/
 Run 
 
 ```npm install```
+
 then
 
 ```npm start```
@@ -31,7 +32,7 @@ This single page should then open in your browser.
 - testing
 
 Github project board in kanban format here: 
-[https://github.com/users/CodeTrafficker/projects/3])https://github.com/users/CodeTrafficker/projects/3)
+https://github.com/users/CodeTrafficker/projects/3
 
  ## Creator [Phil Lollar](https://github.com/CodeTrafficker/)
 
