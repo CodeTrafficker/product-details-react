@@ -8,6 +8,10 @@ This demo uses json file saved out from
 
  ... to populate a display grid showing product images, their titles, and prices The grid's css uses flexbox to lay out mobile to desktop views (1 column, 2 columns, 3 columns).
 
+## On the web
+A recent build is currently hosted on [Surge](https://surge.sh/) at:
+http://prod-details-demo.surge.sh/
+
 ## Installation
 
 This guide assumes you already have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed.
