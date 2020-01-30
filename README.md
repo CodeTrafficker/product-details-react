@@ -38,5 +38,4 @@ This single page should then open in your browser.
 Github project board in kanban format here: 
 https://github.com/users/CodeTrafficker/projects/3
 
- ## Creator [Phil Lollar](https://github.com/CodeTrafficker/)
 
