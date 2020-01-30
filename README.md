@@ -30,12 +30,7 @@ then
 
 This single page should then open in your browser.
 
-## In need of:
+## To-dos tracked as cards on this project's "Github projects" board:
 - thumbnail slideshow per product.
 - SEO meta tags via React instead of static in head tag
 - testing
-
-Github project board in kanban format here: 
-https://github.com/users/CodeTrafficker/projects/3
-
-
