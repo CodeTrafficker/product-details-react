@@ -6,11 +6,20 @@ const ProdDetailsGrid =()=> {
     const root = document.getElementById('root');
    
     const fetchWestElm = () => {
-      // NOPE:
-      // const productUrl = 'https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json';  
-      // Had to move json file to /public/api/
+       // Had to move json file to /public/api/
       const productUrl = '/api/products.json';
 
+      // NOPE - CORS on westelm not set to allow.
+      //const productUrl = 'https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json';  
+      // window.fetch(productUrl, {
+      //   method: "GET",
+      //   mode: 'cors',
+      //   headers: {
+      //     'Accept': 'application/json, text/plain, */*',
+      //       'Content-Type': 'application/json'
+      //     // "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8" // otherwise $_POST is empty
+      //   }
+      // })
 
       window.fetch(productUrl)
       .then(async function(response) {
