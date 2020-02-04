@@ -1,3 +1,4 @@
+import React from 'react';
 import './prodDetailsGrid.css';
 // import products from './api/products.json';
 
@@ -37,28 +38,28 @@ const ProdDetailsGrid =()=> {
   const singleProduct = (jsonResponse, index) => {
     let thisImg = jsonResponse.groups[index].hero;
     let prodName = jsonResponse.groups[index].name;
+    let imgAltTitle = thisImg.alt ? thisImg.alt : prodName;
     // TODO: be able to select pricing: 
     let prodPrice = jsonResponse.groups[index].priceRange.regular.high;
+    const itemImg = `
+      <img class="detailImg" 
+        src=${thisImg.href}
+        alt="${imgAltTitle}"
+        rel=${thisImg.rel}
+        width=${thisImg.width}
+        height=${thisImg.height}
+        title="${imgAltTitle}" />`;
 
-    let itemImg = '<img class="detailImg" src='
-      +thisImg.href
-      +' alt="'+thisImg.alt
-      +'" rel="'+thisImg.rel
-      +'" width='+thisImg.width
-      +' height='+thisImg.height
-      +' title="'+thisImg.alt
-      +'" />';
-
-      let itemContainer = '<div class="prodCon"'
-      +'>'
-      +'<div class="prodName">'
-      +prodName
-      +'</div>'
-      +'<div class="prodPrice">$'
-      +prodPrice
-      +'</div>'
-      +itemImg
-      +'</div>';
+    const itemContainer = `
+      <div class="prodCon">
+        <div class="prodName">
+          ${prodName}
+        </div>
+        <div class="prodPrice">$
+          ${prodPrice}
+        </div>
+        ${itemImg}
+      </div>`;
 
     root.insertAdjacentHTML('beforeend',itemContainer);
   }
