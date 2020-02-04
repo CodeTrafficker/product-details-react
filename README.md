@@ -2,7 +2,7 @@
 
 ### React demo of a product details page 
 
-This demo uses json file saved out from 
+This demo uses a json file saved out from 
 
  https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json
 
