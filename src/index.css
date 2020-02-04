@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Basic sets. resets: */
+/* Box model? Normalize? set all to pos:rel? */
+/* TODO: rems should be standardized */
+html  {
+  width: fit-content;
+  max-width: 1200px;
+}
+@media only screen and (min-width: 600px) {
+  html  {width: 100%;}
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body  {
+  font-family: "Lato", arial, sans-serif;
+  font-size: 1em;
+  padding: 0 20px 60px 20px;
 }
+
+button  {
+  border-radius: 1.25rem;
+  color: #E9F2F9;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: .75rem 2rem;
+  display: block;
+  margin: 0 auto 10px auto;
+  background-color: #F26C4F;
+  opacity: .75;
+  cursor: pointer;
+  /* Not working? */
+  transition: opacity 0.5s ease-in-out;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover, button:active  {
+  opacity: 1;
+}
+/* END resets */
+
+
+/* Sitewide styles */
+#root {
+  position: relative;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+
