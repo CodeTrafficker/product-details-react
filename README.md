@@ -1,14 +1,16 @@
 # [product-details-react](https://github.com/CodeTrafficker/product-details-react)
 
-### React demo of a product details page 
+## React demo of a product details page 
 
-This demo uses a json file saved out from 
+Challenge: Display a responsive/"mobile first" design of products, accessing the products' details from the json string provided.
+
+Because of a lack of CORS permissions, this demo uses a json file saved out from 
 
  https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json
 
- ... to populate a display grid showing product images, their titles, and prices The grid's css uses flexbox to lay out mobile to desktop views (1 column, 2 columns, 3 columns).
+ ... to populate a display grid showing product images, their titles, and prices. The grid's css uses flexbox to lay out mobile to desktop views (1 column, 2 columns, 3 columns), instead of importing a library such as Bootstrap or Foundation.
 
-## On the web
+### On the web
 A recent build is currently hosted on [Surge](https://surge.sh/) at:
 http://prod-details-demo.surge.sh/
 
